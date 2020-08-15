@@ -6,7 +6,7 @@
 
 
 
-## Proyecto de Dulcería 1
+## Proyecto de Dulcería 
 
 
 
