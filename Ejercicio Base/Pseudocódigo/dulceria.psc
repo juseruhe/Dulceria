@@ -2,7 +2,7 @@ Algoritmo ValorTotalVentas
 	Escribir 'Ingrese La cantidad de productos para registrar'
 	Leer Productos_Registrados
 	TotalProductos <- 0
-	Para Productos_Registrados<-1 Hasta Productos_Registrados Hacer
+	Para Productos_Registrados<-1 Hasta Productos_Registrados  Hacer
 		Escribir ' Escriba Código del Producto:'
 		Leer Codigo_Producto
 		Escribir 'Escriba Nombre del Producto:'
