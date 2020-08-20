@@ -1,8 +1,10 @@
+package Total_Ventas;
+
 import java.util.Scanner;
 
-public class Main
-{
-	public static void main(String[] args) {
+public class Total_Ventas {
+
+    public static void main(String[] args) {
 		
 		Scanner Entrada = new Scanner(System.in);
 		
@@ -41,4 +43,6 @@ public class Main
 		System.out.println("El Total de Ventas de Todos los Productos es: " + TotalProductos);
 		
 	}
+
+    
 }
