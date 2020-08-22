@@ -12,7 +12,7 @@ public class Ventas {
 
      int Productos_Registrados;
 
-     Producto[]  losProductos =  new Producto[50];
+     Productos[]  losProductos =  new Productos[50];
 
      String Codigo,Nombre;
 
@@ -37,13 +37,14 @@ public class Ventas {
     
     Total_Productos+=Total_Producto;
 
-    Producto unproducto = new Producto();
+    Productos unproducto = new Productos();
+
     unproducto.Codigo_Producto = Codigo;
     unproducto.Nombre_Producto = Nombre;
     unproducto.Precio_Producto = Precio;
     unproducto.Cantidad_Producto = Cantidad;
     unproducto.Unidades_Vendidas = Unidades_Vendidas;
-    unproducto.Total_Ventas = Total_Producto;
+    
 
     losProductos[i] = unproducto;
 
