@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class Producto {
     
 String Codigo_Producto,Nombre_Producto;
@@ -11,13 +13,20 @@ this.Nombre_Producto = Nombre_Producto;
 this.Precio_Producto = Precio_Producto;
 this.Cantidad_Producto = Cantidad_Producto;
 this.Unidades_Vendidas = Unidades_Vendidas;
-}
 
-int Total_Producto() {
-
-return Cantidad_Producto * Unidades_Vendidas;
 
 }
+
+void Total_Producto() {
+
+ JOptionPane.showMessageDialog(null,"El Total de "+ Nombre_Producto + " es: "+ Precio_Producto *Unidades_Vendidas);
+
+
+
+}
+
+
+
 
 
 
