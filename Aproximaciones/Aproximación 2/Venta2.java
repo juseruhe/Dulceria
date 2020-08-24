@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Venta2 {
     
-public static void main(final String[] args) {
+public static void main( String[] args) {
     
     int Productos_Registrados ;
 
