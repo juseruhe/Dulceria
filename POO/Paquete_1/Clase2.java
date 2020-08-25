@@ -1,5 +1,5 @@
 public class Clase2 {
-    
+    /*
 public static void main(String[] args) {
     /*
     Clase1 Objeto1 = new Clase1();
@@ -19,19 +19,19 @@ public static void main(String[] args) {
 */
 
 
-// Constantes
+/* Constantes
 
 Persona persona1 = new Persona(23,"Sebastian");
 
 persona1.setedad(24);
 
 persona1.mostrarDatos();
+*/
+}
+
+*/
+
+
 
 }
 
-
-
-
-
-
-}
