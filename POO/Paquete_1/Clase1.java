@@ -9,10 +9,23 @@ private int edad;
 
 private String nombre;
 
+
+
+
+
+
+
+
+
+
+
 public void Setedad(int edad){
 this.edad = edad;
 
 }
+
+
+
 
 public int Getedad(){
 
@@ -33,5 +46,7 @@ public String Getnombre(){
     return nombre;
     
 }
+
+
 
 }
