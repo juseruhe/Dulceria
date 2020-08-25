@@ -4,10 +4,10 @@ public class Vehiculo {
     
     private String marca;
     private String modelo;
-    private Double precio;
+    private int precio;
 
 
-Vehiculo(String marca,String modelo,Double precio){
+Vehiculo(String marca,String modelo,int precio){
 
     this.marca = marca;
     this.modelo = modelo;
@@ -17,7 +17,7 @@ Vehiculo(String marca,String modelo,Double precio){
 }
 
 
-public Double getPrecio(){
+public int getPrecio(){
 
 return precio ;
 
@@ -27,7 +27,7 @@ return precio ;
 public String mostrarDatos(){
 
 
-return "La Marca es "+marca+" ,el Modelo es "+modelo+" y el Precio es $"+precio+".\n";
+return "Marca: "+marca+", Modelo:"+modelo+", Precio: $"+precio+".\n";
 
 }
 

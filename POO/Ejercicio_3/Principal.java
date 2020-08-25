@@ -11,7 +11,7 @@ public class Principal {
 
     public static int IndiceCocheMasBarato(Vehiculo coches[]){
 
-        Double Precio;
+        int Precio;
         
         int Indice=0;
         
@@ -42,7 +42,7 @@ public class Principal {
      Scanner Entrada = new Scanner(System.in);
 
      String Marca,Modelo;
-     Double Precio;
+     int Precio;
      int Numero_Vehiculos;
      int IndiceBarato;
 
@@ -63,7 +63,7 @@ public class Principal {
    
 
     System.out.println("Digite El Precio del Coche :");
-    Precio = Entrada.nextDouble();
+    Precio = Entrada.nextInt();
 
     coches[i] = new Vehiculo(Marca, Modelo, Precio);
 
@@ -74,7 +74,7 @@ public class Principal {
   IndiceBarato = IndiceCocheMasBarato(coches);
 
 
-  System.out.println("El Coche maás barato es :" + coches[IndiceBarato].mostrarDatos());
+  System.out.println("El Coche más barato es " + coches[IndiceBarato].mostrarDatos());
 
   }
 
