@@ -21,7 +21,7 @@ int Venta_Dia2,int Venta_Dia3){
 }
 
 
-public double totalVentas(){
+double promedioVentas(){
 
     return (Venta_Dia1+Venta_Dia2+Venta_Dia3)/3;
 }

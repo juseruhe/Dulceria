@@ -61,7 +61,7 @@ public class Ventas2{
 
  for(int i=0;i<Numero_Productos;i++){
 
-promedioVentas = losproductos[i].totalVentas();
+promedioVentas = losproductos[i].promedioVentas();
 
 System.out.println("El Promedio de Ventas del producto "+losproductos[i].Nombre_Producto+" es: $"
 +promedioVentas+" COP");
