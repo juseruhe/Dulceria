@@ -46,7 +46,7 @@ public class Ventas4 {
     }
     
    
-    System.out.println("El Promedio de Ventas de todos los productos de la dulcería es:"+ promedio);
+    System.out.println("El Promedio de Ventas de todos los productos de la dulcería es: $"+ promedio+" COP");
 
 
 
