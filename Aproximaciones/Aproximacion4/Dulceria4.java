@@ -91,7 +91,7 @@ public double promedioTodosProductos(){
     for (int i=0; i<Numero_Productos;i++){
 
     
-        promedio = (promedio + producto[i].promedioVentas()) ;
+        promedio +=  producto[i].promedioVentas()/Numero_Productos;
 
     
 
