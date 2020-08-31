@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - hola",
+            "request": "launch",
+            "mainClass": "hola",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Total_Ventas",
+            "request": "launch",
+            "mainClass": "Total_Ventas",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Ventas7",
             "request": "launch",
             "mainClass": "Ventas7",

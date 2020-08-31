@@ -1,4 +1,4 @@
-package Total_Ventas;
+
 
 import java.util.Scanner;
 
