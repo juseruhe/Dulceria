@@ -12,13 +12,13 @@ public class ProductoChocolates7 extends Producto7{
     setventa_Dia1(venta_Dia1);
     setventa_Dia2(venta_Dia2);
     setventa_Dia3(venta_Dia3);
-    setventa_Dia3(venta_Dia4);
+    setventa_Dia4(venta_Dia4);
     
     }
 
 
     public double totalPromedio(){
-        return (venta_Dia1 + venta_Dia2+venta_Dia3+venta_Dia4) /4;
+        return (venta_Dia1 + venta_Dia2+ venta_Dia3 + venta_Dia4) /4;
     }
 
 

@@ -16,7 +16,7 @@ public class ProductoBebidas7 extends Producto7 {
     
 
     public double totalPromedio(){
-        return (venta_Dia1 + venta_Dia2+venta_Dia3) /3;
+        return (venta_Dia1 + venta_Dia2 + venta_Dia3)/3;
     }
 
     public int venta_Dia1(){
