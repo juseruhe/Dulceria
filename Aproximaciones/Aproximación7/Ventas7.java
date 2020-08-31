@@ -21,7 +21,7 @@ public class Ventas7 {
         do{
        System.out.println("\nMenu de Opciones"); 
        System.out.println("[l]- Adicionar Producto de Dulce:  "); 
-       System.out.println("[2]- Adicopnar Producto de Bebidas:  "); 
+       System.out.println("[2]- Adicionar Producto de Bebidas:  "); 
        System.out.println("[3]- Adicionar Producto de Chocolate: "); 
        System.out.println("[4]- Calcular Promedio de Ventas"); 
        System.out.println("[5]- Salir \n"); 
