@@ -8,5 +8,6 @@ create table Producto(
     categoria varchar(55) not null,
     venta_dia1 int(30) not null,
     venta_dia2 int(30) not null,
-    venta_dia3 int(30) not null
+    venta_dia3 int(30) not null,
+    primary key(id);
     );
