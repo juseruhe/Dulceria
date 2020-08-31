@@ -1,7 +1,7 @@
 create database dulceria;
 use dulceria;
 
-create table Producto(
+create table producto(
     id int(15) not null AUTO_INCREMENT,
     codigo_producto varchar(15) not null,
     nombre_producto varchar(55) not null,
