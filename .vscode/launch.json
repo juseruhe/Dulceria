@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Imprimir",
+            "request": "launch",
+            "mainClass": "bdjava3.Imprimir",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Imprimir",
+            "request": "launch",
+            "mainClass": "Imprimir",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Imprimir",
+            "request": "launch",
+            "mainClass": "BDjava2.Imprimir",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Imprimir",
+            "request": "launch",
+            "mainClass": "BaseDatosConJava.Imprimir",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Imprimir",
+            "request": "launch",
+            "mainClass": "BaseDatosConJava.Enlace.Imprimir",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Crud",
+            "request": "launch",
+            "mainClass": "BaseDatosConJava.Enlace.Crud",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CRUDJavaDemo",
+            "request": "launch",
+            "mainClass": "BaseDatosConJava.Enlace.CRUDJavaDemo",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CrudJavaDemo",
+            "request": "launch",
+            "mainClass": "BaseDatosConJava.Enlace.CrudJavaDemo",
+            "projectName": "Dulcería_cf7d5c0e"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - hola",
             "request": "launch",
             "mainClass": "hola",

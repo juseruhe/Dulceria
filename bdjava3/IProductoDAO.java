@@ -1,4 +1,5 @@
-package BaseDatosConJava.Enlace;
+package bdjava3;
+
 import java.util.List;
 
 public interface IProductoDAO {

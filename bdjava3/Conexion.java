@@ -1,4 +1,5 @@
-package BaseDatosConJava.Enlace;
+package bdjava3;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,6 +13,8 @@ public class Conexion{
      String usuario = "root";
      String password = "";
      String url = "jdbc:mysql://localhost:3306/dulceria?user="+usuario+"&password="+password;
+
+    
 
      try{
           con = DriverManager.getConnection(url);

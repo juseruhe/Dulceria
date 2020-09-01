@@ -1,4 +1,4 @@
-package BaseDatosConJava.Enlace;
+package bdjava3;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -1,4 +1,4 @@
-package BaseDatosConJava.Enlace;
+package BDjava2;
 
 public class Producto {
     private int id;
