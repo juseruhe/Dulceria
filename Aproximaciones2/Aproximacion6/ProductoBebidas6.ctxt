@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ProductoBebidas6
+comment1.params=codigo_Producto\ nombre_Producto\ categoria\ venta_Dia1\ venta_Dia2\ venta_Dia3
+comment1.target=ProductoBebidas6(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment2.params=
+comment2.target=double\ totalPromedio()
+comment3.params=
+comment3.target=int\ venta_Dia1()
+comment4.params=venta_Dia1
+comment4.target=void\ setventa_Dia1(int)
+comment5.params=
+comment5.target=int\ venta_Dia2()
+comment6.params=venta_Dia2
+comment6.target=void\ setventa_Dia2(int)
+comment7.params=
+comment7.target=int\ venta_Dia3()
+comment8.params=venta_Dia3
+comment8.target=void\ setventa_Dia3(int)
+numComments=9

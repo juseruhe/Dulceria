@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=ProductoDulces5
+comment1.params=
+comment1.target=java.lang.String\ getcodigo_Producto()
+comment10.params=codigo_Producto\ nombre_Producto\ categoria\ venta_Dia1\ venta_Dia2
+comment10.target=ProductoDulces5(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int)
+comment11.params=
+comment11.target=double\ promedioVentas()
+comment2.params=
+comment2.target=java.lang.String\ getnombre_Producto()
+comment3.params=nombre_Producto
+comment3.target=void\ setnombre_Producto(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getcategoria()
+comment5.params=categoria
+comment5.target=void\ setcategoria(java.lang.String)
+comment6.params=
+comment6.target=int\ getventa_Dia1()
+comment7.params=venta_Dia1
+comment7.target=void\ setventa_Dia1(int)
+comment8.params=
+comment8.target=int\ getventa_Dia2()
+comment9.params=venta_Dia2
+comment9.target=void\ setventa_Dia2(int)
+numComments=12

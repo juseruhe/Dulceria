@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ControllerProducto
+comment1.params=
+comment1.target=ControllerProducto()
+comment2.params=producto
+comment2.target=void\ registrar(Producto)
+comment3.params=producto
+comment3.target=void\ actulizar(Producto)
+comment4.params=producto
+comment4.target=void\ eliminar(Producto)
+comment5.params=
+comment5.target=void\ verProductos()
+numComments=6
