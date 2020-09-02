@@ -40,6 +40,16 @@ dao.registrar(producto);
     vista.verProductos(productos);
 
     }
+    
+    public void obtenerbyid(int id){
+        Producto producto = new Producto();
+        IProductoDAO dao = new ProductoDAOImpl();
+        producto = dao.obtenerbyid(id);
+        vista.verProducto(producto);
+        
+        
+        
+    }
 
     
 }

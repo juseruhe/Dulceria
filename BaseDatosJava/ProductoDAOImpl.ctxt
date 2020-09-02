@@ -8,4 +8,6 @@ comment3.params=producto
 comment3.target=boolean\ actualizar(Producto)
 comment4.params=producto
 comment4.target=boolean\ eliminar(Producto)
-numComments=5
+comment5.params=id
+comment5.target=Producto\ obtenerbyid(int)
+numComments=6

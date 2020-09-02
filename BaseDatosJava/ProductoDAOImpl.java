@@ -1,11 +1,14 @@
 
 
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.*;
+import java.lang.String;
 
 public class ProductoDAOImpl implements IProductoDAO{
 
@@ -15,6 +18,8 @@ public boolean registrar(Producto producto){
 boolean registrar = false;
 Statement stm= null;
 Connection con= null;
+
+
 
 String sql="INSERT INTO producto VALUES(NULL,'"+producto.getcodigo_Producto()+"','"+producto.getnombre_Producto()+"','"+producto.getcategoria()+"','"+producto.getventa_Dia1()+"','"+producto.getventa_Dia2()+"','"+producto.getventa_Dia3()+"')";
 
@@ -121,6 +126,44 @@ try{
 return eliminar;
 }
 
+@Override
+public Producto obtenerbyid(int id){
+Connection co=null;
+Statement ps= null;
+ResultSet rs= null;
 
+
+String sql="SELECT * FROM producto WHERE id="+id;
+Producto product = new Producto();
+
+try{
+    co = Conexion.conectar();
+    ps = co.prepareStatement(sql);
+    rs = ps.executeQuery(sql);
+    
+    if(rs.next()){
+        product.setid(rs.getInt(1));
+        product.setcodigo_Producto(rs.getString(2));
+        product.setnombre_Producto(rs.getString(3));
+        product.setcategoria(rs.getString(4));
+        product.setventa_Dia1(rs.getInt(5));
+        product.setventa_Dia2(rs.getInt(6));
+        product.setventa_Dia3(rs.getInt(7));
+     
+  } 
+  
+  ps.close();
+  rs.close();
+  co.close();
+  
+  
+}catch(SQLException e) {
+
+    System.out.println("Error: Clase ProductoDAOImpl, metodo obtener id ");
+    e.printStackTrace();
+}
+
+return product;
+}
 }
 
