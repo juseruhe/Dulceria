@@ -2,4 +2,12 @@
 comment0.target=Imprimir
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=br
+comment2.target=boolean\ ejecutarMenu(java.io.BufferedReader)
+comment3.params=br
+comment3.target=Producto\ ingresaProducto(java.io.BufferedReader)
+comment4.params=br\ proDefaults
+comment4.target=Producto\ ingresaProducto(java.io.BufferedReader,\ Producto)
+comment5.params=br\ proDefaults\ nuevoProducto
+comment5.target=Producto\ ingresaProducto(java.io.BufferedReader,\ Producto,\ boolean)
+numComments=6

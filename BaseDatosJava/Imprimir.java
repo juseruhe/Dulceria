@@ -64,6 +64,7 @@ public static boolean ejecutarMenu(BufferedReader br) throws IOException{
         
         case 'A': 
          System.out.println("Ingrese número id a actualizar: ");
+         pro = null;
         id = new Integer(br.readLine().trim());
         ControllerProducto controllera = new ControllerProducto();
         controllera.obtenerbyid(id);
@@ -188,7 +189,7 @@ System.out.println("Ingrese un dato para el nombre del producto");
 
     do{
         System.out.println(prompt+":");
-        nombre_Producto = br.readLine().trim();
+        categoria = br.readLine().trim();
         if (categoria.equals("") && proDefaults != null){
             
             categoria = proDefaults.getcategoria();
@@ -259,7 +260,7 @@ prompt="Ingrese la venta del dia 3 del Producto "+((proDefaults== null) ?"":"["+
 
     do{
         System.out.println(prompt+":");
-        venta_Dia1 = 0;
+        venta_Dia3 = 0;
         try{
             String amt =br.readLine().trim();
         if (!amt.equals("")){
@@ -277,7 +278,7 @@ System.out.println("Por favor ingrese numero positivo");
 }} catch(NumberFormatException e){
     System.out.println("Ingrese un dato para la venta del dia 3"+e.getMessage());
 }
-} while(venta_Dia3== 0);
+} while(venta_Dia3 == 0);
 
 pro = new Producto(codigo_Producto,nombre_Producto,categoria,venta_Dia1,venta_Dia2,venta_Dia3);
 

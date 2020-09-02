@@ -18,7 +18,7 @@ dao.registrar(producto);
     }
 
 
-    public void actulizar(Producto producto){
+    public void actualizar(Producto producto){
 
         IProductoDAO dao = new ProductoDAOImpl();
         dao.actualizar(producto);
