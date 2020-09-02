@@ -11,3 +11,6 @@ create table producto(
     venta_dia3 int(30) not null,
     primary key(id)
     );
+
+
+SET @@global.time_zone = '+00:00'; SET @@session.time_zone = '+00:00';

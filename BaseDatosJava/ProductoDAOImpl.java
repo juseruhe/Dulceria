@@ -21,12 +21,13 @@ Connection con= null;
 
 
 
-String sql="INSERT INTO producto VALUES(NULL,'"+producto.getcodigo_Producto()+"','"+producto.getnombre_Producto()+"','"+producto.getcategoria()+"','"+producto.getventa_Dia1()+"','"+producto.getventa_Dia2()+"','"+producto.getventa_Dia3()+"')";
+String sql="INSERT INTO producto  VALUES(NULL,'"+producto.getcodigo_Producto()+"','"+producto.getnombre_Producto()+"','"+producto.getcategoria()+"','"+producto.getventa_Dia1()+"','"+producto.getventa_Dia2()+"','"+producto.getventa_Dia3()+"')";
 
 try {
 
     con = Conexion.conectar();
     stm = con.createStatement();
+    stm.execute(sql);
     registrar = true;
     stm.close();
     con.close();

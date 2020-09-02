@@ -14,7 +14,7 @@ public class Conexion{
      String usuario = "root";
      String password = "";
      String url = "jdbc:mysql://localhost:3306/dulceria?user="+usuario+"&password="+password;
-
+     
     
 
      try{

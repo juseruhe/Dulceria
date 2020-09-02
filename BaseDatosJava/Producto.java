@@ -84,7 +84,7 @@ public void setventa_Dia3(int venta_Dia3){
 @Override
 public String toString(){
     return this.id+","+this.codigo_Producto+","+nombre_Producto+","+categoria+","+venta_Dia1+","+
-    venta_Dia2+","+venta_Dia3+",";
+    venta_Dia2+","+venta_Dia3;
 }
 
 

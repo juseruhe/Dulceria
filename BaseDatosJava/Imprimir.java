@@ -196,14 +196,14 @@ System.out.println("Ingrese un dato para el nombre del producto");
 
 
 
- if (categoria.length() < 1){
+ if (nombre_Producto.length() < 1){
             
             categoria = proDefaults.getcategoria();
 System.out.println("Ingrese un dato para la categoria del producto");
 
 }
 }
-} while(categoria.length() < 1);
+} while(nombre_Producto.length() < 1);
 
 prompt="Ingrese la venta del dia 1 del Producto "+((proDefaults== null) ?"":"["+nf.format((int)proDefaults.getventa_Dia1())+"]");
 
@@ -219,7 +219,7 @@ prompt="Ingrese la venta del dia 1 del Producto "+((proDefaults== null) ?"":"["+
 
 
 
- if (venta_Dia1 < 1){
+ if (venta_Dia1 < 0){
             
             
 System.out.println("Por favor ingrese numero positivo");
