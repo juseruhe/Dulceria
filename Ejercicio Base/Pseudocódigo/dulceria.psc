@@ -13,7 +13,7 @@ Algoritmo ValorTotalVentas
 		Leer Cantidad_Producto
 		Escribir 'Escriba Unidades Vendidas del Producto'
 		Leer Unidades_Vendidas
-		TotalProducto <- Cantidad_Producto*Unidades_Vendidas
+		TotalProducto <- Precio_Producto*Unidades_Vendidas
 		Escribir 'El Total de Ventas de  '+Nombre_Producto+' es: ',TotalProducto
 		TotalProductos <- TotalProductos+TotalProducto
 	FinPara
