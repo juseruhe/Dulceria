@@ -85,6 +85,8 @@ $query->bindParam(':venta_dia1',$venta_dia1);
 $query->bindParam(':venta_dia2',$venta_dia2);
 $query->bindParam(':venta_dia3',$venta_dia3);
 
+$query->execute();
+
 echo "<p style=' color:#05911F; font-family:tahoma;'> Producto Agregado Correctamente </p> <br>";
 echo "Cantidad de Productos Registrados: ".$query->rowCount()."<br>";
 echo "<br> <a href='index.php'> Ver Todos los Productos</a>";
