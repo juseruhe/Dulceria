@@ -77,7 +77,7 @@ if(isset($_POST["submit"])) {
 $sql = "INSERT into producto(codigo_producto,nombre_producto,categoria,venta_dia1,venta_dia2,
 venta_dia3) values(:codigo_producto,:nombre_producto,:categoria,:venta_dia1,:venta_dia2,:venta_dia3)";
 
-$query = $conexion -> prepare($sql);
+$query = $conexion->prepare($sql);
 $query->bindParam(':codigo_producto',$codigo_producto);
 $query->bindParam(':nombre_producto',$nombre_producto);
 $query->bindParam(':categoria',$categoria);
