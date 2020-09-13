@@ -1,0 +1,27 @@
+
+body{
+background:#0A88EC;
+color:#441409;
+font-family: tahoma;
+font-size:24px;
+margin:0px;
+padding:0px;
+}
+
+table.index{
+   border:solid 5px #ffffff;
+   width:1200px;
+   position: relative;
+   right:-100px;
+   color:#000000;
+}
+
+
+
+
+table.index tr.titulo{
+background: #ffffff;
+font-size:30px;
+
+    
+}
