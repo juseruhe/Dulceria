@@ -13,6 +13,7 @@ echo"<th> Categoria </th>";
 echo"<th> Venta del Día 1 </th>";
 echo"<th> Venta del Día 2 </th>";
 echo"<th> Venta del Día 3 </th>";
+echo"<th>Acción</th>";
 echo "</tr>";
 
 if($resultado){
@@ -27,6 +28,7 @@ foreach($resultado as $row => $item){
     <td>".utf8_encode($item['venta_dia1'])."</td>
     <td>".utf8_encode($item['venta_dia2'])."</td>
     <td>".utf8_encode($item['venta_dia3'])."</td>
+    <td><a href='#'> Actualizar</a> <a href='#'>Eliminar</a></td>
     </tr>";
 
 }

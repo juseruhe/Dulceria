@@ -6,11 +6,16 @@
     <title> Menú Principal</title>
 </head>
 <body>
+
+
     <?php 
+
+    
     
     echo "Bienvenidos a la Dulcería";
     echo "<h2>  Menú Principal</h2>";
     echo "<a href='listarproductosp1.php'>Mostrar Productos</a>";
+    
     
     
     ?>

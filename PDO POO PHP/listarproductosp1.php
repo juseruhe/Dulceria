@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1> Lista de Productos</h1>  <br>
+    <a href="insertarproducto.html">Ingresar Producto</a>
     <?php include("listarProductosl1.php");               ?>
 </body>
 </html>

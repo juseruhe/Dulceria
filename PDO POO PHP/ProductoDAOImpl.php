@@ -6,11 +6,13 @@ class ProductoDAOImpl extends Conexiondb{
 
 private $conexion;
 
+private $codigo_producto,$nombre_producto,$categoria,$venta_dia1,$venta_dia2,$venta_dia3;
+
 public function __construct()
 {
     $this->conexion=Conexiondb::conectar();
 
-
+   
 
 }
 
@@ -30,8 +32,25 @@ public function getListarProducto(){
 
     return $declaracion->fetchAll();
 
-    $declaracion->close();
+  
 
+}
+
+public function getInsertarProducto($codigo_producto,$nombre_producto,$categoria,
+$venta_dia1,$venta_dia2,$venta_dia3){
+
+    $declaracion = $this->conexion->prepare("INSERT into producto (codigo_producto,nombre_producto,
+    categoria,venta_dia1,venta_dia2,venta_dia3) values(:codigo_producto,:nombre_producto,:categoria,
+    :venta_dia1,:venta_dia2,:venta_dia3)");
+
+    $declaracion->bindParam(":codigo_producto",$codigo_producto);
+    $declaracion->bindParam(":nombre_producto",$nombre_producto);
+    $declaracion->bindParam(":categoria",$categoria);
+    $declaracion->bindParam(":venta_dia1",$venta_dia1);
+    $declaracion->bindParam(":venta_dia2",$venta_dia2);
+    $declaracion->bindParam(":venta_dia3",$venta_dia3);
+
+    $declaracion->execute();
 }
 
 
