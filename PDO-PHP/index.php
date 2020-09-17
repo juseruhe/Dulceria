@@ -41,8 +41,9 @@ while($row=$result->fetch(PDO::FETCH_ASSOC)){
     echo "<td>".$row['venta_dia2']. "</td>";
     echo "<td>".$row['venta_dia3']. "</td>";
     echo "<td> <a href=\"editar.php?id=$row[id]\"> Editar Producto</a> </td>";
-    echo "<td> <a href=\"eliminar.php?id=$row[id]\" onclick=\"alert 
-    confirm('¿Esta Seguro de Eliminar este Producto?')\" > Eliminar Producto</a> </td>";
+    echo "<td> <a href=\"eliminar.php?id=$row[id]\" onclick=\"
+    confirm('¿Esta Seguro de Eliminar este Producto?');\"> Eliminar Producto</a> </td>";
+    echo "</tr>";
 
 }
 

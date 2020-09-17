@@ -28,7 +28,7 @@ foreach($resultado as $row => $item){
     <td>".utf8_encode($item['venta_dia1'])."</td>
     <td>".utf8_encode($item['venta_dia2'])."</td>
     <td>".utf8_encode($item['venta_dia3'])."</td>
-    <td><a href='#'> Actualizar</a> <a href='#'>Eliminar</a></td>
+    <td><a href=\"editarproducto.php?id=$item[id]\"> Actualizar</a> <a href=\"eliminarproducto.php?id=$item[id]\" onclick=\"return confirm('¿Estoy Seguro de Eliminar?');\">Eliminar</a></td>
     </tr>";
 
 }

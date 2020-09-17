@@ -72,7 +72,7 @@ else {
 
     $modelo2 = new ProductoDAOImpl();
    
-    $resultado= $modelo2->getInsertarProducto($codigo_producto,$nombre_producto,$categoria,
+    $resultado= $modelo2->setInsertarProducto($codigo_producto,$nombre_producto,$categoria,
     $venta_dia1,$venta_dia2,$venta_dia3);
     
   echo "<p> Datos Ingresados Correctamente </p>";
