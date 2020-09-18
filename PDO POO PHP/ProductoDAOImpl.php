@@ -56,7 +56,7 @@ $venta_dia1,$venta_dia2,$venta_dia3){
 public function setActualizar($id,$codigo_producto,$nombre_producto,$categoria,
 $venta_dia1,$venta_dia2,$venta_dia3){
 
-$declaracion = $this->conexion->prepare("UPDATE producto set codigo_producto=:codigo_producto,
+$declaracion = $this->conexion->prepare("UPDATE producto set  codigo_producto=:codigo_producto,
 nombre_producto=:nombre_producto,
 categoria=:categoria,venta_dia1=:venta_dia1,venta_dia2=:venta_dia2,venta_dia3=:venta_dia3
 where id=:id");

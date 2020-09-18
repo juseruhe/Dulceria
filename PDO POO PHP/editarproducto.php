@@ -76,7 +76,7 @@ $resultado= $modelo3->setActualizar($id,$codigo_producto,$nombre_producto,$categ
   echo "<p> Datos Actualizados Correctamente </p>";
   echo "<a href='listarproductosp1.php'> Volver a la Página Principal </a>";
 
-// header("location:index.php");
+ header("location:listarproductosp1.php");
 
 
 

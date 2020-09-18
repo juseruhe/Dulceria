@@ -12,7 +12,7 @@ $result = $conexion->query("SELECT * from producto order by id asc");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Productos</title>
-    <link rel="stylesheet" href="diseno.css">
+    <link rel="stylesheet" href="diseno.css"/>
 </head>
 <body>
     
@@ -34,12 +34,12 @@ $result = $conexion->query("SELECT * from producto order by id asc");
 while($row=$result->fetch(PDO::FETCH_ASSOC)){
 
     echo "<tr>";
-    echo "<td>".$row['codigo_producto']."</td>";
-    echo "<td>".$row['nombre_producto']. "</td>";
-    echo "<td>".$row['categoria']. "</td>";
-    echo "<td>".$row['venta_dia1']."</td>";
-    echo "<td>".$row['venta_dia2']. "</td>";
-    echo "<td>".$row['venta_dia3']. "</td>";
+    echo "<td class='cuadro'>".$row['codigo_producto']."</td>";
+    echo "<td class='cuadro'>".$row['nombre_producto']. "</td>";
+    echo "<td class='cuadro'>".$row['categoria']. "</td>";
+    echo "<td class='cuadro'>".$row['venta_dia1']."</td>";
+    echo "<td class='cuadro'>".$row['venta_dia2']. "</td>";
+    echo "<td class='cuadro'>".$row['venta_dia3']. "</td>";
     echo "<td> <a href=\"editar.php?id=$row[id]\"> Editar Producto</a> </td>";
     echo "<td> <a href=\"eliminar.php?id=$row[id]\" onclick=\"
     confirm('¿Esta Seguro de Eliminar este Producto?');\"> Eliminar Producto</a> </td>";
