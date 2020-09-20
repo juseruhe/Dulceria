@@ -10,18 +10,18 @@ class Controllerjson{
         "nota"=>$nota,
         "fecha"=>$fecha);
 
-        $respuesta = Datos::createUsuarioModel($datosController,"usuarios");
+        $respuesta = Datos::createUsuarioModel($datosController,"usuario");
         return $respuesta;
     }
 
     public function readUsuarioController(){
-        $respuesta = Datos::readUsuarioModel("usuarios");
+        $respuesta = Datos::readUsuarioModel("usuario");
         return $respuesta;
     }
 
     public function updateUsuariosController($id, $clave){
         $datosController = array("id"=>$id, "clave"=>$clave);
-        $respuesta = Datos::updateUsuariosModel($datosController, "usuarios");
+        $respuesta = Datos::updateUsuarioModel($datosController, "usuario");
         return $respuesta;
     }
 
@@ -32,7 +32,7 @@ class Controllerjson{
 
     public function loginUsuarioController($usuario, $clave){
         $datosController = array("usuario"=>$usuario, "clave"=>$clave);
-        $respuesta = Datos::loginUsuarioModel($datosController, "usuarios");
+        $respuesta = Datos::loginUsuarioModel($datosController, "usuario");
         return $respuesta;
     }
 }

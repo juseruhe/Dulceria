@@ -16,7 +16,7 @@ function ParametrosDisponibles($params){
         $respuesta = array();
         $respuesta['error'] = true;
 
-        $respuesta['mensaje'] = 'Parametro: ' . substr($faltantes, l, strlen($faltantes)). 'vacio';
+        $respuesta['mensaje'] = 'Parametro: ' . substr($faltantes, 1, strlen($faltantes)). 'vacio';
         echo json_encode($respuesta);
 
         //detener la ejecucion

@@ -11,7 +11,7 @@ class Datos extends Database{
         $stmt->bindParam(":nombre", $datosModel["nombre"],PDO::PARAM_STR);
         $stmt->bindParam(":usuario", $datosModel["usuario"],PDO::PARAM_STR);
         $stmt->bindParam(":clave", $datosModel["clave"],PDO::PARAM_STR);
-        $stmt->bindParam(":nota", $datosModel["nota"],PDO::PARAM_STR);
+        $stmt->bindParam(":nota", $datosModel["nota"],PDO::PARAM_INT);
         $stmt->bindParam(":fecha", $datosModel["fecha"],PDO::PARAM_STR);
 
         if($stmt->execute()){
@@ -43,7 +43,7 @@ class Datos extends Database{
             $user["nota"] = utf8_encode($nota);
             $user["fecha"] = utf8_encode($fecha);
 
-            array_puch($usuarios, $user);
+            array_push($usuarios, $user);
         }
         return $usuarios;
     }
