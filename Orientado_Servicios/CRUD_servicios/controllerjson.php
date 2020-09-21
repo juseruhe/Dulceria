@@ -26,7 +26,7 @@ class Controllerjson{
     }
 
     public function deleteUsuarioController($id){
-        $respuesta = Datos::deleteUsuarioModel($id, "usuarios");
+        $respuesta = Datos::deleteUsuarioModel($id, "usuario");
         return $respuesta;
     }
 

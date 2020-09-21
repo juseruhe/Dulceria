@@ -70,7 +70,13 @@ if(isset($_GET['apicall'])){
             $respuesta['contenido'] = $result;
         }
     break;
+    case 'deleteusuario':
+        ParametrosDisponibles(array('id'));
+        $db = new Controllerjson();
+        $result = $db->deleteUsuarioController($_POST['id']);
     }
+
+    
 }else{
     $respuesta['error'] = true;
     $respuesta['mensaje'] = 'Llamado invalido del API!';
