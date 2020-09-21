@@ -102,5 +102,35 @@ class Datos extends Database{
             return false;
         }      
     }
+
+    public function mostrarcontrasenaModel($usuario,$tabla){
+     
+        $stmt = Database::getconectar()->prepare("SELECT usuario,clave FROM $tabla where usuario=:usuario");
+        
+       $stmt->bindParam(":usuario",$usuario);
+       
+        $stmt->execute();
+
+       
+        $stmt->bindColumn("usuario",$usuario);
+        $stmt->bindColumn("clave",$clave); 
+        //$usuarios = array();
+
+
+        
+        while($fila = $stmt->fetch(PDO::FETCH_BOUND)){
+            
+            
+            $user["usuario"] = utf8_encode($usuario);
+            $user["clave"] = utf8_encode($clave);
+          
+          //  array_push($usuarios,$user);
+         return "La contrasena del Usuario $user[usuario] es $user[clave]";
+           
+        }
+        
+   
+
+    }
 }
 ?>

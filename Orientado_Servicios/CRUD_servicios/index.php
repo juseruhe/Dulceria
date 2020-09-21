@@ -32,27 +32,27 @@
         </div>
         <div class="hr"></div>
         <div class="foot-lnk">
-          <a href="#forgot">¿Olvidaste Tu Contraseña?</a>
+          <a href="contrasena.php">¿Olvidaste Tu Contraseña?</a>
         </div>
       </form>
-      <form class="sign-up-htm" action="http://localhost/pdologin03/api.php?apicall=createusuario" method="POST">
+      <form class="sign-up-htm" action="http://localhost/Dulceria/Orientado_Servicios/CRUD_servicios/api.php?apicall=createusuario" method="POST">
         <div class="group">
           <label for="nomcom" class="label">Nombre Completo: </label>
-          <input id="fullname" name="fullname" type="text" class="input">
+          <input id="fullname" name="nombre" type="text" class="input">
         </div>
         <div class="group">
           <label for="usua" class="label">Usuario: </label>
-          <input id="username" name="username" type="text" class="input">
+          <input id="username" name="usuario" type="text" class="input">
         </div>
         <div class="group">
           <label for="contr" class="label">Contraseña: </label>
-          <input id="password" name="password" type="password" class="input" data-type="password">
+          <input id="password" name="clave" type="password" class="input" data-type="password">
         </div>
         <div class="group">
           <label for="pin" class="label">Pin Secreto: </label>
-          <input id="secretpin" name="secretpin" type="text" class="input" >
+          <input id="secretpin" name="nota" type="text" class="input" >
         </div>
-        <input id="created" type="hidden" name="created"  value="<?php echo date("Y-m-d\TH-i");?>">
+        <input id="created" type="hidden" name="fecha"  value="<?php echo date("Y-m-d\TH-i");?>">
         <div class="group">
           <input type="submit" class="button" value="Registrarse">
         </div>

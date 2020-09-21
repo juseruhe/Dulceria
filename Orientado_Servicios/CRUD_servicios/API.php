@@ -74,6 +74,17 @@ if(isset($_GET['apicall'])){
         ParametrosDisponibles(array('id'));
         $db = new Controllerjson();
         $result = $db->deleteUsuarioController($_POST['id']);
+    break;
+
+    case 'mostrarcontrasena':
+        ParametrosDisponibles(array('usuario'));
+        $db = new Controllerjson();
+      $result = $db->mostrarcontrasenaController($_POST['usuario']);
+      
+      $respuesta = $result;
+    
+
+
     }
 
     

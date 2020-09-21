@@ -26,6 +26,7 @@ class Controllerjson{
     }
 
     public function deleteUsuarioController($id){
+      
         $respuesta = Datos::deleteUsuarioModel($id, "usuario");
         return $respuesta;
     }
@@ -34,6 +35,15 @@ class Controllerjson{
         $datosController = array("usuario"=>$usuario, "clave"=>$clave);
         $respuesta = Datos::loginUsuarioModel($datosController, "usuario");
         return $respuesta;
+    }
+
+    public function mostrarcontrasenaController($usuario){
+
+        //$datosController = array("usuario"=>$usuario);
+        $respuesta = Datos::mostrarcontrasenaModel($usuario,"usuario");
+
+        return $respuesta;
+
     }
 }
 ?>
