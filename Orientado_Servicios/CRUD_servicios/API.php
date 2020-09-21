@@ -37,7 +37,7 @@ if(isset($_GET['apicall'])){
             $_POST['clave'],
             $_POST['nota'],
             $_POST['fecha']);
-
+/*
         if($result){
             $respuesta['error'] = false;
             $respuesta['mensaje'] = 'Usuario agregado correctamente';
@@ -45,7 +45,9 @@ if(isset($_GET['apicall'])){
         }else{
             $respuesta['error'] = true;
             $respuesta['mensaje'] = 'Ocurrio un error intenta nuevamente';
-        }
+        }*/
+
+        $respuesta= $db->readUsuarioController();
     break;
 
     case 'readusuarios':

@@ -125,8 +125,11 @@ class Datos extends Database{
             $user["clave"] = utf8_encode($clave);
           
           //  array_push($usuarios,$user);
-         return "La contrasena del Usuario $user[usuario] es $user[clave]";
-           
+          if($user["usuario"] != null) {
+         return "La contrasena del Usuario $user[usuario] es $user[clave]";}
+           else {
+               return "El usuario no existe";
+           }
         }
         
    
