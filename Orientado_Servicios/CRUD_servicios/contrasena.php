@@ -23,6 +23,9 @@
         <div class="group">
           <input type="submit" class="button" value="Ingresar">
         </div>
+        <div class="foot-lnk">
+          <a href="index.php">Volver a la Página Principal</a>
+        </div>
       </form>
 
 

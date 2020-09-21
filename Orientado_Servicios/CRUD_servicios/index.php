@@ -49,7 +49,7 @@
           <input id="password" name="clave" type="password" class="input" data-type="password">
         </div>
         <div class="group">
-          <label for="pin" class="label">Pin Secreto: </label>
+          <label for="pin" class="label">Nota: </label>
           <input id="secretpin" name="nota" type="text" class="input" >
         </div>
         <input id="created" type="hidden" name="fecha"  value="<?php echo date("Y-m-d\TH-i");?>">
