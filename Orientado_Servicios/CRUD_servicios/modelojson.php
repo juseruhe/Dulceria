@@ -32,9 +32,14 @@ class Datos extends Database{
         $stmt->bindColumn("nota",$nota);
         $stmt->bindColumn("fecha",$fecha);
         $usuarios = array();
+     
+
+         
 
         while($fila = $stmt->fetch(PDO::FETCH_BOUND)){
-            $user = array();
+            
+        $user = array();
+        
 
             $user["id"] = utf8_encode($id);
             $user["nombre"] = utf8_encode($nombre);
@@ -43,9 +48,17 @@ class Datos extends Database{
             $user["nota"] = utf8_encode($nota);
             $user["fecha"] = utf8_encode($fecha);
 
-            array_push($usuarios, $user);
+            array_push($usuarios,$user);
+           
+       
+ 
+
+
+            
         }
-        return $usuarios;
+
+   return $usuarios;
+        
     }
 
     public function updateUsuarioModel($datosModel, $tabla){
@@ -124,12 +137,15 @@ class Datos extends Database{
             $user["usuario"] = utf8_encode($usuario);
             $user["clave"] = utf8_encode($clave);
           
-          //  array_push($usuarios,$user);
-          if($user["usuario"] != null) {
-         return "La contrasena del Usuario $user[usuario] es $user[clave]";}
+         // array_push($usuarios,$user);
+         if($user["usuario"] != null) {
+         return " La contrasena del Usuario $user[usuario] es $user[clave] 
+         <a href='index.php'> Volver ";}
            else {
                return "El usuario no existe";
            }
+
+           
         }
         
    

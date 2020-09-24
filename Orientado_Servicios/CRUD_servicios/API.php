@@ -31,13 +31,17 @@ if(isset($_GET['apicall'])){
         case 'createusuario':
 
             ParametrosDisponibles(array('nombre', 'usuario', 'clave', 'nota', 'fecha'));
+            
+
+
+
             $db = new Controllerjson();
             $result = $db->createUsuarioController($_POST['nombre'],
             $_POST['usuario'],
             $_POST['clave'],
-            $_POST['nota'],
+            $nota,
             $_POST['fecha']);
-/*
+
         if($result){
             $respuesta['error'] = false;
             $respuesta['mensaje'] = 'Usuario agregado correctamente';
@@ -45,16 +49,20 @@ if(isset($_GET['apicall'])){
         }else{
             $respuesta['error'] = true;
             $respuesta['mensaje'] = 'Ocurrio un error intenta nuevamente';
-        }*/
+        }
 
         $respuesta= $db->readUsuarioController();
     break;
 
     case 'readusuarios':
         $db = new Controllerjson();
+        $result = $db->readUsuarioController();
+
         $respuesta['error'] = false;
         $respuesta['mensaje'] = 'Solicitud completada correctamente';
         $respuesta['contenido'] = $db->readUsuarioController();
+
+        
 
     break;
 
@@ -84,7 +92,10 @@ if(isset($_GET['apicall'])){
       $result = $db->mostrarcontrasenaController($_POST['usuario']);
       
       $respuesta = $result;
+    break;
     
+   
+
 
 
     }
