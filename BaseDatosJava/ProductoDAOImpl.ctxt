@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ProductoDAOImpl
+comment1.params=producto
+comment1.target=boolean\ registrar(Producto)
+comment2.params=
+comment2.target=java.util.List\ obtener()
+comment3.params=producto
+comment3.target=boolean\ actualizar(Producto)
+comment4.params=producto
+comment4.target=boolean\ eliminar(Producto)
+comment5.params=id
+comment5.target=Producto\ obtenerbyid(int)
+numComments=6

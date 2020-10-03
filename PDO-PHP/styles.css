@@ -1,0 +1,56 @@
+body{
+    background: #32CFCA;
+    font-family: tahoma;
+    font-size:30px;
+    color:#1D20D6;
+}
+
+a{
+    color:#D6311D;
+}
+
+
+table.index{
+
+    border:solid 3px #0B5B0C;
+}
+
+table.index tr.titulo{
+
+    background: #8C9A8C;
+}
+
+
+
+
+table.index tr td{
+    border:solid 3px #0B5B0C;
+}
+
+
+form {
+    border:solid 3px #0B5B0C;
+    text-align: center;
+    width:500px;
+    position: relative;
+    height:800px;
+    right:-500px;
+}
+
+form input{
+
+    width:300px;
+    background:#32CFCA;
+    font-family: tahoma;
+    font-size:30px;
+    color:#1D20D6;
+    margin:10px;
+}
+
+
+form input[type=submit]{
+
+    position: relative;
+    bottom:-100px;
+    left:-40px;
+}
