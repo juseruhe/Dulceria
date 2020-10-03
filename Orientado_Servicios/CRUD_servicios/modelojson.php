@@ -75,7 +75,7 @@ class Datos extends Database{
     }
 
     public function deleteUsuarioModel($id, $tabla){
-        $stmt = Database::getconectar()->prepare("DELETE FROM $tabla WHERE id=:id");
+        $stmt = Database::getconectar()->prepare("DELETE  FROM $tabla WHERE id=:id");
 
         $stmt->bindParam(":id",$id, PDO::PARAM_INT);
         if($stmt->execute()){
